@@ -25,7 +25,6 @@ public class TodoResource {
 
 	@Autowired
 	private TodoRepository todoRepository;
-	// private TodoHardcodedService todoService;
 
 	@GetMapping("/users/{username}/todos")
 	public Iterable<Todo> getAllTodos(@PathVariable String username) {

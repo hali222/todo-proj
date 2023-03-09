@@ -17,9 +17,5 @@ public class RestfulWebServicesApplication {
 		SpringApplication.run(RestfulWebServicesApplication.class, args);
 		
 		TodoHardcodedService td = new TodoHardcodedService();
-		//td.delete(2);
-		//System.out.println(td.todos.get(0).getId());
-		//System.out.println(td.todos.size());
-		
 	}
 }

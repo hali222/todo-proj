@@ -46,7 +46,7 @@ public class TodoResource {
 	@PutMapping("/users/{username}/todos/{id}")
 	public ResponseEntity<Todo> updateTodo(@PathVariable String username, @PathVariable long id,
 			@RequestBody Todo todo) {
-		Todo todoUpdated = todoRepository.save(todo);
+		todoRepository.save(todo);
 		return new ResponseEntity<Todo>(todo, HttpStatus.OK);
 	}
 

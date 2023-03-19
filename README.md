@@ -1,9 +1,12 @@
 # Todo
 
+This is a Todo project containig crud functionality. Backend is Spring Boot und Frontend Angular. Database is postgres.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.0.
 
 ## Development server
 
+Run a postgres database and create a db named 'todo'. Other setting you find in application.properties file.
+Run Backend as a Spring Boot Application on default `http://localhost:8080/`. 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding

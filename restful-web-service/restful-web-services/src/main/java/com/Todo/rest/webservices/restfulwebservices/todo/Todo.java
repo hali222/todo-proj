@@ -12,7 +12,7 @@ import javax.persistence.GeneratedValue;
 @Entity
 @Table(name = "todo")
 public class Todo {
-	
+
 	@Id
 	@GeneratedValue
 	private Long Id;
@@ -21,21 +21,23 @@ public class Todo {
 	private Date targetDate;
 	private boolean isDone;
 	private int count;
-	protected Todo() {}
-	
-	
-	
-	
+
+	protected Todo() {
+	}
+
 	public int getCount() {
 		return count;
 	}
+
 	public void setCount(int count) {
 		this.count = count;
 	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(Id);
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -47,7 +49,7 @@ public class Todo {
 		Todo other = (Todo) obj;
 		return Id == other.Id;
 	}
-	
+
 	public Todo(Long id, String username, String description, Date targetDate, boolean isDone, int count) {
 		super();
 		this.Id = id;
@@ -57,33 +59,43 @@ public class Todo {
 		this.isDone = isDone;
 		this.count = count;
 	}
+
 	public long getId() {
 		return Id;
 	}
+
 	public void setId(Long id) {
 		Id = id;
 	}
+
 	public String getUsername() {
 		return username;
 	}
+
 	public void setUsername(String username) {
 		this.username = username;
 	}
+
 	public String getDescription() {
 		return description;
 	}
+
 	public void setDescription(String description) {
 		this.description = description;
 	}
+
 	public Date getTargetDate() {
 		return targetDate;
 	}
+
 	public void setTargetDate(Date targetDate) {
 		this.targetDate = targetDate;
 	}
+
 	public boolean isDone() {
 		return isDone;
 	}
+
 	public void setDone(boolean isDone) {
 		this.isDone = isDone;
 	}

@@ -1,6 +1,6 @@
 # Todo
 
-This is a Todo project containig crud functionality. Backend is Spring Boot und Frontend Angular. Database is postgres.
+This is a Todo project containig crud functionality. Backend is Spring Boot and frontend Angular. Database is postgres.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.0.
 
 ## Development server
